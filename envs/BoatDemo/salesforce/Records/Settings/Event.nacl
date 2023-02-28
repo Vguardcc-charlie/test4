@@ -1,0 +1,5 @@
+salesforce.EventSettings {
+  fullName = "Event"
+  enableDynamicStreamingChannel = false
+  enableStreamingApi = true
+}

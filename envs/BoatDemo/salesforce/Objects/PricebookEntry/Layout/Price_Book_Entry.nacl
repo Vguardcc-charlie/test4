@@ -1,0 +1,65 @@
+salesforce.Layout PricebookEntry_Price_Book_Entry@bss {
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.Product2Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.PricebookEntry.field.IsActive
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.Pricebook2Id
+            },
+            {
+              behavior = "Required"
+              field = salesforce.PricebookEntry.field.UnitPrice
+            },
+          ]
+        },
+        {
+        },
+      ]
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      layoutColumns = [
+        {
+        },
+      ]
+      style = "CustomLinks"
+    },
+  ]
+  miniLayout = {
+    fields = [
+      "Product2Id",
+      "IsActive",
+      "Pricebook2Id",
+      "UnitPrice",
+    ]
+  }
+  multilineLayoutFields = [
+    "Product2Id",
+    "IsActive",
+    "Pricebook2Id",
+    "UnitPrice",
+  ]
+  showEmailCheckbox = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  fullName = "PricebookEntry-Price Book Entry"
+  _parent = [
+    salesforce.PricebookEntry,
+  ]
+}

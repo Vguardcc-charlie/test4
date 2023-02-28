@@ -1,0 +1,6 @@
+salesforce.OrderSettings {
+  fullName = "Order"
+  enableNegativeQuantity = false
+  enableOrders = true
+  enableZeroQuantity = false
+}

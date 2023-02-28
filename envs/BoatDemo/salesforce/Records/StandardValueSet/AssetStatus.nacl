@@ -1,0 +1,16 @@
+salesforce.StandardValueSet AssetStatus {
+  fullName = "AssetStatus"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Purchased"
+      default = false
+      label = "Current Owner"
+    },
+    {
+      fullName = "Previous Owner"
+      default = false
+      label = "Previous Owner"
+    },
+  ]
+}

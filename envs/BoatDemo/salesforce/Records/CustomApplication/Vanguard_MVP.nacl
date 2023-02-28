@@ -1,0 +1,50 @@
+salesforce.CustomApplication Vanguard_MVP {
+  fullName = "Vanguard_MVP"
+  brand = {
+    headerColor = "#008E00"
+    shouldOverrideOrgTheme = false
+  }
+  formFactors = [
+    "Small",
+    "Large",
+  ]
+  isNavAutoTempTabsDisabled = false
+  isNavPersonalizationDisabled = false
+  isNavTabPersistenceDisabled = false
+  label = "Vanguard MVP"
+  navType = "Standard"
+  profileActionOverrides = [
+    {
+      actionName = "Tab"
+      content = "Home_Page_Default2"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = "Standard"
+    },
+    {
+      actionName = "Tab"
+      content = "Home_Page_Default2"
+      formFactor = "Large"
+      pageOrSobjectType = "standard-home"
+      type = "Flexipage"
+      profile = "Admin"
+    },
+  ]
+  tabs = [
+    "standard-home",
+    "standard-Lead",
+    "standard-Account",
+    "standard-Contact",
+    "standard-Opportunity",
+    "standard-Dashboard",
+    "standard-Feed",
+  ]
+  uiType = "Lightning"
+  utilityBar = "Vanguard_MVP_UtilityBar"
+  _generated_dependencies = [
+    {
+      reference = salesforce.LightningPage.instance.Vanguard_MVP_UtilityBar
+    },
+  ]
+}

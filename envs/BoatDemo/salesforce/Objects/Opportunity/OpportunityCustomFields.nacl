@@ -1,0 +1,147 @@
+type salesforce.Opportunity {
+  salesforce.FormulaCurrency GSPDashProf__Amount_Won__c {
+    apiName = "Opportunity.GSPDashProf__Amount_Won__c"
+    deprecated = false
+    externalId = false
+    formula = '''
+IF(
+IsWon = TRUE,
+Amount,
+0
+)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Amount Won"
+    precision = 18
+    scale = 2
+    trackTrending = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Number GSPDashProf__Close_Date_Extensions__c {
+    apiName = "Opportunity.GSPDashProf__Close_Date_Extensions__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    externalId = false
+    label = "# Close Date Extensions"
+    precision = 18
+    scale = 0
+    trackFeedHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number GSPDashProf__Close_Date_Month_Extensions__c {
+    apiName = "Opportunity.GSPDashProf__Close_Date_Month_Extensions__c"
+    defaultValueFormula = "0"
+    deprecated = false
+    externalId = false
+    label = "# Close Date Month Extensions"
+    precision = 18
+    scale = 0
+    trackFeedHistory = false
+    trackTrending = false
+    unique = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Date GSPDashProf__Date_Opportunity_was_Closed__c {
+    apiName = "Opportunity.GSPDashProf__Date_Opportunity_was_Closed__c"
+    deprecated = false
+    externalId = false
+    label = "Date Opportunity was Closed"
+    trackFeedHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaNumber GSPDashProf__Days_Open__c {
+    apiName = "Opportunity.GSPDashProf__Days_Open__c"
+    deprecated = false
+    externalId = false
+    formula = '''
+IF(ISBLANK( GSPDashProf__Date_Opportunity_was_Closed__c ),
+NOW() - CreatedDate,
+GSPDashProf__Date_Opportunity_was_Closed__c - DATEVALUE(CreatedDate)
+)+1
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Days Open"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaNumber GSPDashProf__Days_Since_Last_Stage_Change__c {
+    apiName = "Opportunity.GSPDashProf__Days_Since_Last_Stage_Change__c"
+    deprecated = false
+    externalId = false
+    formula = '''
+IF(ISBLANK(GSPDashProf__Date_Opportunity_was_Closed__c),
+TODAY()-GSPDashProf__Last_Stage_Change_Date__c,
+GSPDashProf__Date_Opportunity_was_Closed__c - GSPDashProf__Last_Stage_Change_Date__c
+)
+'''
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Days Since Last Stage Change"
+    precision = 18
+    scale = 0
+    trackTrending = false
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.Date GSPDashProf__Last_Stage_Change_Date__c {
+    apiName = "Opportunity.GSPDashProf__Last_Stage_Change_Date__c"
+    deprecated = false
+    externalId = false
+    label = "Last Stage Change Date"
+    trackFeedHistory = false
+    trackTrending = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist DB_Competitor__c {
+    apiName = "Opportunity.DB_Competitor__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field."
+    externalId = false
+    label = "DB Competitor"
+    trackFeedHistory = false
+    trackTrending = false
+    valueSet = [
+      {
+        fullName = "Competitor A"
+        default = false
+        label = "Competitor A"
+      },
+      {
+        fullName = "Competitor B"
+        default = false
+        label = "Competitor B"
+      },
+      {
+        fullName = "Competitor C"
+        default = false
+        label = "Competitor C"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

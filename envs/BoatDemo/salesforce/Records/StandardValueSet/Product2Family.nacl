@@ -1,0 +1,101 @@
+salesforce.StandardValueSet Product2Family {
+  fullName = "Product2Family"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Dinghies sail/power"
+      default = false
+      label = "Dinghies sail/power"
+    },
+    {
+      fullName = "Skiffs"
+      default = false
+      label = "Skiffs"
+    },
+    {
+      fullName = "Day sailors"
+      default = false
+      label = "Day sailors"
+    },
+    {
+      fullName = "Coastal cruising sailboats"
+      default = false
+      label = "Coastal cruising sailboats"
+    },
+    {
+      fullName = "Ocean-going sailboats"
+      default = false
+      label = "Ocean-going sailboats"
+    },
+    {
+      fullName = "Bass boats"
+      default = false
+      label = "Bass boats"
+    },
+    {
+      fullName = "Flat Boats"
+      default = false
+      label = "Flat Boats"
+    },
+    {
+      fullName = "Airboats"
+      default = false
+      label = "Airboats"
+    },
+    {
+      fullName = "Runabouts"
+      default = false
+      label = "Runabouts"
+    },
+    {
+      fullName = "Ski boats"
+      default = false
+      label = "Ski boats"
+    },
+    {
+      fullName = "Wake boats"
+      default = false
+      label = "Wake boats"
+    },
+    {
+      fullName = "Pontoon Boats"
+      default = false
+      label = "Pontoon Boats"
+    },
+    {
+      fullName = "Deck Boats"
+      default = false
+      label = "Deck Boats"
+    },
+    {
+      fullName = "Cabin Cruisers"
+      default = false
+      label = "Cabin Cruisers"
+    },
+    {
+      fullName = "Houseboats"
+      default = false
+      label = "Houseboats"
+    },
+    {
+      fullName = "Trawlers"
+      default = false
+      label = "Trawlers"
+    },
+    {
+      fullName = "Yachts"
+      default = false
+      label = "Yachts"
+    },
+    {
+      fullName = "Mega Yachts"
+      default = false
+      label = "Mega Yachts"
+    },
+    {
+      fullName = "Expedition Yachts"
+      default = false
+      label = "Expedition Yachts"
+    },
+  ]
+}

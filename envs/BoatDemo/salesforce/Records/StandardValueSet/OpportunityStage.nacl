@@ -1,0 +1,51 @@
+salesforce.StandardValueSet OpportunityStage {
+  fullName = "OpportunityStage"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Prospecting"
+      default = false
+      label = "Prospecting"
+      closed = false
+      forecastCategory = "Pipeline"
+      probability = 10
+      won = false
+    },
+    {
+      fullName = "Qualification"
+      default = false
+      label = "Qualification"
+      closed = false
+      forecastCategory = "Pipeline"
+      probability = 10
+      won = false
+    },
+    {
+      fullName = "Negotiation/Review"
+      default = false
+      label = "Negotiation/Review"
+      closed = false
+      forecastCategory = "Pipeline"
+      probability = 90
+      won = false
+    },
+    {
+      fullName = "Closed Won"
+      default = false
+      label = "Closed Won"
+      closed = true
+      forecastCategory = "Closed"
+      probability = 100
+      won = true
+    },
+    {
+      fullName = "Closed Lost"
+      default = false
+      label = "Closed Lost"
+      closed = true
+      forecastCategory = "Omitted"
+      probability = 0
+      won = false
+    },
+  ]
+}

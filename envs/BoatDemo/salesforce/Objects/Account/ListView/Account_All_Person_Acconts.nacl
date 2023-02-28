@@ -1,0 +1,23 @@
+salesforce.ListView Account_All_Person_Acconts {
+  fullName = "Account.All_Person_Acconts"
+  columns = [
+    "ACCOUNT.NAME",
+    "ACCOUNT.SITE",
+    "ACCOUNT.ADDRESS1_STATE",
+    "ACCOUNT.PHONE1",
+    "ACCOUNT.TYPE",
+    "CORE.USERS.ALIAS",
+  ]
+  filterScope = "Everything"
+  filters = [
+    {
+      field = "IS_PERSON_ACCOUNT"
+      operation = "equals"
+      value = "1"
+    },
+  ]
+  label = "All Person Acconts"
+  _parent = [
+    salesforce.Account,
+  ]
+}

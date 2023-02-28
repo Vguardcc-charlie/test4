@@ -1,0 +1,231 @@
+type salesforce.Product2 {
+  salesforce.Picklist BOAT_LENGTH__c {
+    apiName = "Product2.BOAT_LENGTH__c"
+    externalId = false
+    label = "Boat Length (Ft.)"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "1 - 15"
+        default = false
+        label = "1 - 15"
+      },
+      {
+        fullName = "16 - 30"
+        default = false
+        label = "16 - 30"
+      },
+      {
+        fullName = "31 - 45"
+        default = false
+        label = "31 - 45"
+      },
+      {
+        fullName = "46 - 70"
+        default = false
+        label = "46 - 70"
+      },
+      {
+        fullName = "70+"
+        default = false
+        label = "70+"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.FormulaText ImageFRM__c {
+    apiName = "Product2.ImageFRM__c"
+    externalId = false
+    formula = "IMAGE( ImageURL__c , \"Boat\", 110, 110)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Image"
+    trackHistory = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Product2.field.ImageURL__c
+      },
+    ]
+  }
+  salesforce.Text ImageURL__c {
+    apiName = "Product2.ImageURL__c"
+    externalId = false
+    label = "ImageURL"
+    length = 255
+    trackHistory = false
+    unique = false
+    createable = true
+    updateable = true
+    caseSensitive = false
+    queryable = true
+  }
+  salesforce.Html Image__c {
+    apiName = "Product2.Image__c"
+    externalId = false
+    label = "Image"
+    length = 32768
+    trackHistory = false
+    visibleLines = 25
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Number_Of_Berths__c {
+    apiName = "Product2.Number_Of_Berths__c"
+    externalId = false
+    label = "Number Of Berths"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "1"
+        default = false
+        label = "1"
+      },
+      {
+        fullName = "2"
+        default = false
+        label = "2"
+      },
+      {
+        fullName = "3"
+        default = false
+        label = "3"
+      },
+      {
+        fullName = "4"
+        default = false
+        label = "4"
+      },
+      {
+        fullName = "5"
+        default = false
+        label = "5"
+      },
+      {
+        fullName = "6"
+        default = false
+        label = "6"
+      },
+      {
+        fullName = "7"
+        default = false
+        label = "7"
+      },
+      {
+        fullName = "8"
+        default = false
+        label = "8"
+      },
+      {
+        fullName = "9"
+        default = false
+        label = "9"
+      },
+      {
+        fullName = "10"
+        default = false
+        label = "10"
+      },
+      {
+        fullName = "11"
+        default = false
+        label = "11"
+      },
+      {
+        fullName = "12"
+        default = false
+        label = "12"
+      },
+    ]
+    sorted = false
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Price_Range__c {
+    apiName = "Product2.Price_Range__c"
+    externalId = false
+    label = "Price Range"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "£1 - £10000"
+        default = false
+        label = "£1 - £10000"
+      },
+      {
+        fullName = "£10000 - £25000"
+        default = false
+        label = "£10000 - £25000"
+      },
+      {
+        fullName = "£25000 - £50000"
+        default = false
+        label = "£25000 - £50000"
+      },
+      {
+        fullName = "£50000 - £100000"
+        default = false
+        label = "£50000 - £100000"
+      },
+      {
+        fullName = "£100000 - £200000"
+        default = false
+        label = "£100000 - £200000"
+      },
+      {
+        fullName = "£200000 - £500000"
+        default = false
+        label = "£200000 - £500000"
+      },
+      {
+        fullName = "£500000+"
+        default = false
+        label = "£500000+"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Picklist Status__c {
+    apiName = "Product2.Status__c"
+    externalId = false
+    label = "Status"
+    trackHistory = false
+    valueSet = [
+      {
+        fullName = "For Sale"
+        default = false
+        label = "For Sale"
+      },
+      {
+        fullName = "Under Offer"
+        default = false
+        label = "Under Offer"
+      },
+      {
+        fullName = "Sold"
+        default = false
+        label = "Sold"
+      },
+    ]
+    sorted = false
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+  }
+}

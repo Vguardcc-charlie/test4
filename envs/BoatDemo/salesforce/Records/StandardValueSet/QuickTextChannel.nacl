@@ -1,0 +1,16 @@
+salesforce.StandardValueSet QuickTextChannel {
+  fullName = "QuickTextChannel"
+  sorted = false
+  standardValue = [
+    {
+      fullName = "Event"
+      default = true
+      label = "Event"
+    },
+    {
+      fullName = "Task"
+      default = false
+      label = "Task"
+    },
+  ]
+}

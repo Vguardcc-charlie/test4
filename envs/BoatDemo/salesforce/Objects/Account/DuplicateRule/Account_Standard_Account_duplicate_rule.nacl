@@ -1,0 +1,25 @@
+salesforce.DuplicateRule Account_Standard_Account_duplicate_rule@vuuu {
+  fullName = "Account.Standard_Account_duplicate_rule"
+  actionOnInsert = "Allow"
+  actionOnUpdate = "Allow"
+  alertText = "Duplicate Alert"
+  description = "Duplicate Rule for Account records."
+  duplicateRuleMatchRules = [
+    {
+      matchRuleSObjectType = salesforce.Account
+      matchingRule = "Standard_Account_Match_Rule_v1_0"
+    },
+  ]
+  isActive = true
+  masterLabel = "Standard Account duplicate rule"
+  operationsOnInsert = [
+    "Alert",
+    "Report",
+  ]
+  operationsOnUpdate = "Report"
+  securityOption = "EnforceSharingRules"
+  sortOrder = 1
+  _parent = [
+    salesforce.Account,
+  ]
+}

@@ -1,0 +1,29 @@
+type salesforce.Lead {
+  salesforce.FormulaDate DB_Created_Date_without_Time__c {
+    apiName = "Lead.DB_Created_Date_without_Time__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    formula = "CreatedDate"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "DB Created Date without Time"
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+  salesforce.FormulaNumber DB_Lead_Age__c {
+    apiName = "Lead.DB_Lead_Age__c"
+    description = "This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field."
+    externalId = false
+    formula = "NOW() - LastModifiedDate"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "DB Lead Age"
+    precision = 18
+    scale = 0
+    unique = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

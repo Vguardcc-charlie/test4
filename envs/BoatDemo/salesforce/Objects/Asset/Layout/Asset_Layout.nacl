@@ -1,0 +1,146 @@
+salesforce.Layout Asset_Asset_Layout@bs {
+  excludeButtons = [
+    "Submit",
+  ]
+  layoutSections = [
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = true
+      label = "Asset Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Required"
+              field = salesforce.Asset.field.Name
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Asset.field.Product2Id
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Asset.field.AccountId
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Asset.field.ContactId
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Asset.field.Purchase_Date_10_Months__c
+            },
+            {
+              behavior = "Readonly"
+              field = salesforce.Asset.field.Image__c
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Edit"
+              field = salesforce.Asset.field.SerialNumber
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Asset.field.Status
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Asset.field.Price
+            },
+            {
+              behavior = "Edit"
+              field = salesforce.Asset.field.InstallDate
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = false
+      detailHeading = false
+      editHeading = false
+      label = "Additional Information"
+      style = "TwoColumnsLeftToRight"
+    },
+    {
+      customLabel = false
+      detailHeading = true
+      editHeading = false
+      label = "System Information"
+      layoutColumns = [
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Asset.field.CreatedById
+            },
+          ]
+        },
+        {
+          layoutItems = [
+            {
+              behavior = "Readonly"
+              field = salesforce.Asset.field.LastModifiedById
+            },
+          ]
+        },
+      ]
+      style = "TwoColumnsTopToBottom"
+    },
+    {
+      customLabel = true
+      detailHeading = false
+      editHeading = false
+      label = "Custom Links"
+      style = "CustomLinks"
+    },
+  ]
+  relatedLists = [
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "TASK.STATUS",
+        "TASK.PRIORITY",
+        "CORE.USERS.FULL_NAME",
+      ]
+      relatedList = "RelatedActivityList"
+    },
+    {
+      fields = [
+        "TASK.SUBJECT",
+        "TASK.WHO_NAME",
+        "ACTIVITY.TASK",
+        "TASK.DUE_DATE",
+        "CORE.USERS.FULL_NAME",
+        "TASK.LAST_UPDATE",
+      ]
+      relatedList = "RelatedHistoryList"
+    },
+  ]
+  relatedObjects = [
+    "AccountId",
+    "ContactId",
+  ]
+  showEmailCheckbox = false
+  showHighlightsPanel = false
+  showRunAssignmentRulesCheckbox = false
+  showSubmitAndAttachButton = false
+  summaryLayout = {
+    masterLabel = "00h8d000008T7tB"
+    sizeX = 4
+    sizeY = 0
+    summaryLayoutStyle = "Default"
+  }
+  fullName = "Asset-Asset Layout"
+  _parent = [
+    salesforce.Asset,
+  ]
+}

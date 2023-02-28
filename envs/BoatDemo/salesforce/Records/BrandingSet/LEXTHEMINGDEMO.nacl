@@ -1,0 +1,50 @@
+salesforce.BrandingSet LEXTHEMINGDEMO {
+  fullName = "LEXTHEMINGDEMO"
+  brandingSetProperty = [
+    {
+      propertyName = "BRAND_COLOR"
+      propertyValue = "#87C035"
+    },
+    {
+      propertyName = "PAGE_BACKGROUND_COLOR"
+      propertyValue = "#F4FFF2"
+    },
+    {
+      propertyName = "HEADER_BACKGROUND_COLOR"
+      propertyValue = "#FFFFFF"
+    },
+    {
+      propertyName = "BRAND_IMAGE"
+      propertyValue = "/file-asset/New_Project_1?v=1"
+    },
+    {
+      propertyName = "BANNER_IMAGE"
+      propertyValue = ""
+    },
+    {
+      propertyName = "GROUPS_BANNER_IMAGE"
+      propertyValue = ""
+    },
+    {
+      propertyName = "GROUP_IMAGE"
+      propertyValue = ""
+    },
+    {
+      propertyName = "PROFILE_BANNER_IMAGE"
+      propertyValue = ""
+    },
+    {
+      propertyName = "USER_IMAGE"
+      propertyValue = ""
+    },
+    {
+      propertyName = "LINK_AS_BACKGROUND"
+      propertyValue = "true"
+    },
+    {
+      propertyName = "OVERRIDE_LOADING_PAGE"
+      propertyValue = "false"
+    },
+  ]
+  masterLabel = "DEMO"
+}

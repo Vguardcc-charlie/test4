@@ -1,0 +1,20 @@
+type salesforce.OpportunityLineItem {
+  salesforce.FormulaText Image__c {
+    apiName = "OpportunityLineItem.Image__c"
+    externalId = false
+    formula = "IMAGE(  PricebookEntry.Product2.ImageURL__c  , \"Boat\", 110, 110)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Image"
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Product2.field.ImageURL__c
+      },
+    ]
+  }
+}

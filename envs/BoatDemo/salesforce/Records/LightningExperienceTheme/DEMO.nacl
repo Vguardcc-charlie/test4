@@ -1,0 +1,6 @@
+salesforce.LightningExperienceTheme DEMO {
+  fullName = "DEMO"
+  defaultBrandingSet = salesforce.BrandingSet.instance.LEXTHEMINGDEMO
+  masterLabel = "DEMO"
+  shouldOverrideLoadingImage = false
+}

@@ -1,0 +1,33 @@
+type salesforce.Asset {
+  salesforce.FormulaText Image__c {
+    apiName = "Asset.Image__c"
+    externalId = false
+    formula = "IMAGE(  Product2.ImageURL__c  , \"Boat\", 110, 110)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Image"
+    trackHistory = false
+    unique = false
+    createable = false
+    updateable = false
+    caseSensitive = false
+    queryable = true
+    _hidden_value = true
+    _generated_dependencies = [
+      {
+        reference = salesforce.Product2.field.ImageURL__c
+      },
+    ]
+  }
+  salesforce.FormulaDate Purchase_Date_10_Months__c {
+    apiName = "Asset.Purchase_Date_10_Months__c"
+    externalId = false
+    formula = "ADDMONTHS ( InstallDate  , 10)"
+    formulaTreatBlanksAs = "BlankAsZero"
+    label = "Purchase Date + 10 Months"
+    trackHistory = false
+    createable = false
+    updateable = false
+    queryable = true
+    _hidden_value = true
+  }
+}

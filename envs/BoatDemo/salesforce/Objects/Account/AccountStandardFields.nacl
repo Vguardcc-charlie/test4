@@ -1,0 +1,214 @@
+type salesforce.Account {
+  salesforce.Unknown AccountNumber {
+    apiName = "Account.AccountNumber"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist AccountSource {
+    apiName = "Account.AccountSource"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown AnnualRevenue {
+    apiName = "Account.AnnualRevenue"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown BillingAddress {
+    apiName = "Account.BillingAddress"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Description {
+    apiName = "Account.Description"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Fax {
+    apiName = "Account.Fax"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Industry {
+    apiName = "Account.Industry"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Jigsaw {
+    apiName = "Account.Jigsaw"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Name {
+    apiName = "Account.Name"
+    trackFeedHistory = true
+    _hidden_value = true
+  }
+  salesforce.Unknown NumberOfEmployees {
+    apiName = "Account.NumberOfEmployees"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "Account.OwnerId"
+    trackFeedHistory = true
+    _hidden_value = true
+  }
+  salesforce.Picklist Ownership {
+    apiName = "Account.Ownership"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Hierarchy ParentId {
+    apiName = "Account.ParentId"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonAssistantName {
+    apiName = "Account.PersonAssistantName"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonAssistantPhone {
+    apiName = "Account.PersonAssistantPhone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonBirthdate {
+    apiName = "Account.PersonBirthdate"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonDepartment {
+    apiName = "Account.PersonDepartment"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonDoNotCall {
+    apiName = "Account.PersonDoNotCall"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonEmail {
+    apiName = "Account.PersonEmail"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist PersonGenderIdentity {
+    apiName = "Account.PersonGenderIdentity"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonHasOptedOutOfEmail {
+    apiName = "Account.PersonHasOptedOutOfEmail"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonHasOptedOutOfFax {
+    apiName = "Account.PersonHasOptedOutOfFax"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonHomePhone {
+    apiName = "Account.PersonHomePhone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Lookup PersonIndividualId {
+    apiName = "Account.PersonIndividualId"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonLastCURequestDate {
+    apiName = "Account.PersonLastCURequestDate"
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonLastCUUpdateDate {
+    apiName = "Account.PersonLastCUUpdateDate"
+    _hidden_value = true
+  }
+  salesforce.Picklist PersonLeadSource {
+    apiName = "Account.PersonLeadSource"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonMailingAddress {
+    apiName = "Account.PersonMailingAddress"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonMobilePhone {
+    apiName = "Account.PersonMobilePhone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonOtherAddress {
+    apiName = "Account.PersonOtherAddress"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonOtherPhone {
+    apiName = "Account.PersonOtherPhone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist PersonPronouns {
+    apiName = "Account.PersonPronouns"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown PersonTitle {
+    apiName = "Account.PersonTitle"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Phone {
+    apiName = "Account.Phone"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Picklist Rating {
+    apiName = "Account.Rating"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown ShippingAddress {
+    apiName = "Account.ShippingAddress"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Sic {
+    apiName = "Account.Sic"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown SicDesc {
+    apiName = "Account.SicDesc"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Site {
+    apiName = "Account.Site"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown TickerSymbol {
+    apiName = "Account.TickerSymbol"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Tier {
+    apiName = "Account.Tier"
+    _hidden_value = true
+  }
+  salesforce.Picklist Type {
+    apiName = "Account.Type"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+  salesforce.Unknown Website {
+    apiName = "Account.Website"
+    trackFeedHistory = false
+    _hidden_value = true
+  }
+}
